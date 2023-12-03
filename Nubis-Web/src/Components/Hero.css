@@ -1,0 +1,80 @@
+.heroscreen {
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 240px;
+    padding: 72px;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.herotexts {
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 40px;
+    /* position: relative;
+    z-index: 2; */
+}
+
+.HeadTexts {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+
+.headptext {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-top: 1em;
+    line-height: 32px;
+}
+
+
+
+/* .Himg {
+    width: 302px;
+    height: 554px;
+    position: absolute;
+    top: 16vw;
+    z-index: 10;
+    left: 76vw;
+
+} */
+
+.phone {
+    width: 560px;
+    height: 520px;
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    background-image: url(/src/assets/images/Framepic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 56px;
+}
+
+.thebtton {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    background-color: #601B96;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    height: 48px;
+    width: 160px;
+    margin-top: 2em;
+
+}

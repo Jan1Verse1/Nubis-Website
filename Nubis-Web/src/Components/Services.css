@@ -1,0 +1,118 @@
+.OurServices {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    /* border: 1px solid red; */
+    width: auto;
+    padding: 72px;
+    align-items: center;
+}
+
+.texts {
+    font-size: 3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 56px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 120px;
+}
+
+.serviceCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    width: 72vw;
+    align-items: center;
+}
+
+.imageee {
+    width: 560px;
+    height: 320px;
+}
+
+.serviceTexts {
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceTexts h3 {
+    font-size: 2em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.servicecopy {
+    font-size: 1.3em;
+    line-height: 32px;
+    font-weight: 200;
+    font-family: 'DM Sans', sans-serif;
+    color: #7F7F7F;
+    margin-bottom: 8px;
+}
+
+/* .learn p {
+    display: flex;
+    flex-direction: row;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    align-items: center;
+    font-size: 16px;
+    color: #601B96;
+
+} */
+
+
+.learn {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    color: #601B96;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+    /* Add transition for smooth animation */
+}
+
+.learn:hover {
+    transform: translateX(10px);
+    /* Apply translation to move the element to the left */
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    color: #601B96;
+    transition: transform 0.3s ease-in-out;
+    /* Add the same transition to the arrow */
+}
+
+.learn:hover .arrow {
+    transform: translateX(10px);
+    /* Apply translation to the arrow within .learn on hover */
+}
+
+.firstcard,
+.midcard,
+.lastcard {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.firstcard.reveal,
+.midcard.reveal,
+.lastcard.reveal {
+    opacity: 1;
+}

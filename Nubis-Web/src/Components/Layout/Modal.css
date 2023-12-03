@@ -1,0 +1,134 @@
+/* Modal */
+/* .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.modalContainer {
+    display: block;
+    flex-direction: column;
+    width: 100vw;
+    position: absolute;
+    top: 211%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #DFC9F0;
+    border-radius: 8px;
+}
+
+.modalHeader {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+}
+
+.Modal {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+
+}
+
+.modalDesc {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.modalTitle {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modalTitle p {
+    font-size: 14px;
+    color: #BC204B;
+}
+
+.modalText {
+    font-size: 14px;
+    color: #A5A5B3;
+}
+
+
+.modalText li {
+    font-size: 14px;
+    color: #A5A5B3;
+    list-style-type: circle;
+}
+
+.modalInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #333;
+    height: auto;
+}
+
+.closeBtn {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+}
+
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    width: 60vw;
+    height: max-content;
+    padding: 10px;
+    /* left: 495px;
+    position: relative; */
+
+
+}
+
+a {
+    margin-right: 100px;
+}
+
+.logBtn {
+    padding: 7px 25px;
+    background-color: rgba(30, 73, 226, 1);
+    border: none;
+    font: inherit;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.7rem;
+    cursor: pointer;
+    border-radius: 6px;
+    text-underline-offset: none;
+    /* position: relative;
+    left: 470px; */
+}

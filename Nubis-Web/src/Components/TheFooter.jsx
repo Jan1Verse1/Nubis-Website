@@ -20,13 +20,12 @@ const Footer = () => {
         <div className="links">
           <div className="men">
             <ul className="navlinks">
-              <li>About Us</li>
-              <li>FAQs</li>
-              <li>Blog</li>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
             </ul>
           </div>
           <div className="contactt">
-            <p>contact@buckstrybe</p>
+            <p>info@nubis.com</p>
             <p>+234 806 731 8885</p>
           </div>
           <div className="contactt">
@@ -45,14 +44,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="small">
-        <p className="smallA">
-          © 2023 Chord Technologies. - All Rights Reserved
-        </p>
+        <p className="smallA">© 2023 Nubis Limited - All Rights Reserved</p>
 
-        <div className="terms">
+        {/* <div className="terms">
           <p className="smallA">Terms of use </p>
           <p className="smallA">Privacy policy </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
