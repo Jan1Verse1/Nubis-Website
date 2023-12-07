@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Images/logo.png";
+import logo from "../assets/Images/logo.png";
 import "./TheFooter.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="footer">
       <div className="main">
         <div className="Nlogo">
-          <img src={Logo} alt="Nubis logo" />
+          <img src={logo} alt="Nubis logo" />
         </div>
         <div className="links">
           <div className="men">
