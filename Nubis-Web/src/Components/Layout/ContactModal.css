@@ -292,7 +292,7 @@ a {
   /* Add any other textarea styles as needed */
 }
 
-.socialmedia {
+.submedia {
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -301,7 +301,7 @@ a {
 }
 
 
-.socialmediai {
+.sIcons {
   width: 32px;
   height: 32px;
   color: #601B96;
@@ -331,7 +331,7 @@ a {
   height: 24px;
 }
 
-.newstext {
+.newstxt {
   display: flex;
   flex-direction: row;
   margin-top: 24px;
@@ -348,7 +348,7 @@ a {
   margin: 0;
 }
 
-.newstextP {
+.SubText {
   color: #601B96;
   font-size: 1.3em;
   font-family: 'DM Sans', sans-serif;

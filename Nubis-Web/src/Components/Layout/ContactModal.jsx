@@ -197,19 +197,19 @@ const ContactModal = ({ open, onClose }) => {
             </button>
           </div>
         </form>
-        <div className="newstext">
+        <div className="newstxt">
           <div className="calltext">
             <FontAwesomeIcon icon={faPhone} className="call" />
-            <p className="newstextP">
+            <p className="SubText">
               Have Any Questions <br /> (00) 112 365 489
             </p>
           </div>
-          <div className="socialmedia">
-            <FontAwesomeIcon icon={faFacebookF} className="socialmediai" />
-            <FontAwesomeIcon icon={faInstagram} className="socialmediai" />
-            <FontAwesomeIcon icon={faXTwitter} className="socialmediai" />
-            <FontAwesomeIcon icon={faLinkedinIn} className="socialmediai" />
-            <FontAwesomeIcon icon={faThreads} className="socialmediai" />
+          <div className="submedia">
+            <FontAwesomeIcon icon={faFacebookF} className="sIcons" />
+            <FontAwesomeIcon icon={faInstagram} className="sIcons" />
+            <FontAwesomeIcon icon={faXTwitter} className="sIcons" />
+            <FontAwesomeIcon icon={faLinkedinIn} className="sIcons" />
+            <FontAwesomeIcon icon={faThreads} className="sIcons" />
           </div>
         </div>
         ;
