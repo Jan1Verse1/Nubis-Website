@@ -1,0 +1,144 @@
+.News {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 360px;
+    background-color: #601B96;
+    padding: 32px;
+}
+
+.tag {
+    display: flex;
+    width: max-content;
+    padding: 4px;
+    background-color: #2A0B41;
+    border-left: 2px solid #fff;
+}
+
+.tag h6 {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+.Question h3 {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.newstext {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.newstextHeader {
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.newstextP {
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.accordion {
+    width: 60vw;
+}
+
+.accordionitem {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    color: #333;
+    width: 60vw;
+    padding-top: 12px;
+    margin-bottom: 12px;
+    /* border-top: 1px solid #333 */
+}
+
+.accordiontitle {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    /* border: 2px solid red; */
+    color: #333;
+    font-size: 1.3em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.accordioncontent {
+    display: flex;
+    flex-direction: row;
+    color: #333;
+    width: 60vw;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6;
+    /* border: 1px solid red; */
+    /* border-radius: 10px; */
+}
+
+.faqicon {
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+    color: #333;
+}
+
+.socialmediaicon {
+    width: 12px;
+    height: 12px;
+    color: #fff;
+    margin-right: 32px;
+}
+
+.calltext {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.call {
+    display: grid;
+    place-content: center;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    padding: 12px;
+    background-color: #2A0B41;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+
+.faPhone {
+    width: 24px;
+    height: 24px;
+}

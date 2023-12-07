@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import FAQNews from "../FAQNews";
 import "./Modal.css";
 
-const FaqModal = ({ open, onClose }) => {
+const contactModal = ({ open, onClose }) => {
   const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const FaqModal = ({ open, onClose }) => {
   );
 };
 
-export default FaqModal;
+export default contactModal;
