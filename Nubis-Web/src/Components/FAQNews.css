@@ -4,7 +4,7 @@
     grid-gap: 120px;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 
@@ -141,4 +141,24 @@
 .faPhone {
     width: 24px;
     height: 24px;
+}
+
+.newstext {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.newstextHeader {
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.newstextP {
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
 }

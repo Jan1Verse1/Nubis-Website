@@ -38,6 +38,11 @@
     line-height: 32px;
 }
 
+.downbtnn {
+    width: 10rem;
+    height: 3rem;
+    margin-right: 2vw;
+}
 
 
 /* .Himg {
@@ -50,13 +55,31 @@
 
 } */
 
+.appbuttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+}
+
 .phone {
     width: 560px;
     height: 520px;
     /* border: 1px solid #ccc; */
     overflow: hidden;
     background-image: url(/src/assets/images/Framepic.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 56px;
+}
+
+.move {
+    width: 560px;
+    height: 520px;
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    background-image: url(/src/assets/images/MaskGroup.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 56px;

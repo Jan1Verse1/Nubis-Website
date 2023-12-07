@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialC from "../components/TestimonialCard";
+import TestimonialC from "../Components/TestimonialCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import "./Testimonials.css";

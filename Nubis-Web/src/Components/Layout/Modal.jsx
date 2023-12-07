@@ -19,9 +19,7 @@ const FaqModal = ({ open, onClose }) => {
       >
         <div className="modalHeader">
           <div className="modalTitle">
-            <h3>
-              Frequently Asked <br /> Questions
-            </h3>
+            <h3>Frequently Asked Questions</h3>
           </div>
           {/* <div>
             <span className="close-button" onClick={onClose}>

@@ -5,9 +5,23 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import NubisGo from "../assets/images/MaskGroup.png";
 import Corporate from "../assets/images/CorporateW.png";
 import Rider from "../assets/images/RiderMan.png";
+import { Link, useNavigate } from "react-router-dom";
 import "./Services.css";
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  function navGo() {
+    navigate("/NubisGo");
+  }
+
+  function navCorp() {
+    navigate("/NubisCorp");
+  }
+  function navRider() {
+    navigate("/NubisRider");
+  }
+
   // useEffect(() => {
   //   // Initialize ScrollReveal
   //   const sr = ScrollReveal({
@@ -54,7 +68,7 @@ const Services = () => {
               Your satisfaction drives our commitment to excellence.
             </p>
 
-            <p className="learn">
+            <p className="learn" onClick={navGo}>
               EXPLORE MORE
               <FontAwesomeIcon icon={faArrowRightLong} className="arrow" />
             </p>
@@ -69,7 +83,7 @@ const Services = () => {
               logistics and unlock new opportunities for growth.
             </p>
 
-            <p className="learn">
+            <p className="learn" onClick={navCorp}>
               EXPLORE MORE
               <FontAwesomeIcon icon={faArrowRightLong} className="arrow" />
             </p>
@@ -94,7 +108,7 @@ const Services = () => {
               platform for growth, empowerment, and community.
             </p>
 
-            <p className="learn">
+            <p className="learn" onClick={navRider}>
               EXPLORE MORE
               <FontAwesomeIcon icon={faArrowRightLong} className="arrow" />
             </p>

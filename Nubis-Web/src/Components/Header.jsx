@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import FaqModal from "../Components/Layout/Modal";
-import contactModal from "../Components/Layout/ContactUs";
+import ContactModal from "../Components/Layout/ContactModal";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import Logo from "../assets/images/logo.png";
@@ -8,13 +8,14 @@ import Logo from "../assets/images/logo.png";
 const Header = () => {
   const [isFaqModalOpen, setIsFaqModalOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-  const overlayRef = useRef(null);
+  const faqOverlayRef = useRef(null);
+  const contactOverlayRef = useRef(null);
 
   const handleFaqClick = () => {
     setIsFaqModalOpen(true);
   };
 
-  const handleCloseModal = () => {
+  const handleCloseFaqModal = () => {
     setIsFaqModalOpen(false);
   };
 
@@ -34,9 +35,14 @@ const Header = () => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (overlayRef.current && !overlayRef.current.contains(event.target)) {
+      if (
+        (faqOverlayRef.current &&
+          !faqOverlayRef.current.contains(event.target)) ||
+        (contactOverlayRef.current &&
+          !contactOverlayRef.current.contains(event.target))
+      ) {
         // Click outside the modal, close it
-        handleCloseModal();
+        handleCloseFaqModal();
         handleCloseContactModal();
       }
     };
@@ -69,8 +75,8 @@ const Header = () => {
           <li onClick={handleFaqClick}>
             <Link>FAQs</Link>
           </li>
-          <li>
-            <Link to="/contact">Contact Us</Link>
+          <li onClick={handleContactClick}>
+            <Link>Contact Us</Link>
           </li>
         </ul>
 
@@ -78,8 +84,16 @@ const Header = () => {
       </div>
 
       {isFaqModalOpen && (
-        <div ref={overlayRef}>
-          <FaqModal open={isFaqModalOpen} onClose={handleCloseModal} />
+        <div ref={faqOverlayRef}>
+          <FaqModal open={isFaqModalOpen} onClose={handleCloseFaqModal} />
+        </div>
+      )}
+      {isContactModalOpen && (
+        <div ref={contactOverlayRef}>
+          <ContactModal
+            open={isContactModalOpen}
+            onClose={handleCloseContactModal}
+          />
         </div>
       )}
     </header>

@@ -3,19 +3,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 
 import Home from "../src/Pages/Home";
-// import FAQs from "../src/Pages/FAQs";
-// import ContactUs from "../src/Pages/ContactUs";
-// import AboutUs from "../src/Pages/AboutUs";
-// import Communal from "../src/Pages/Communal";
-// import Ajoo from "../src/Pages/Ajoo";
+import NubisGo from "../src/Pages/NubisGo";
+import NubisCorp from "../src/Pages/NubisCorp";
+import NubisRider from "../src/Pages/NubisRider";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
-  // { path: "/contactus", element: <ContactUs /> },
-  // { path: "/about", element: <AboutUs /> },
-  // { path: "/faqs", element: <FAQs /> },
-  // { path: "/communal", element: <Communal /> },
-  // { path: "/ajoo", element: <Ajoo /> },
+  { path: "/NubisGo", element: <NubisGo /> },
+  { path: "/NubisCorp", element: <NubisCorp /> },
+  { path: "/NubisRider", element: <NubisRider /> },
 ]);
 
 function App() {
