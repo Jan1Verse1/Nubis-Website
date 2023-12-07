@@ -31,7 +31,7 @@ const FAQNews = () => {
             Can’t find answers to your <br /> question? Send us a message.
           </h3>
         </div>
-        <div className="newstext">
+        <div className="callus">
           <div className="calltext">
             <FontAwesomeIcon icon={faPhone} className="call" />
             <p className="newstextP">
