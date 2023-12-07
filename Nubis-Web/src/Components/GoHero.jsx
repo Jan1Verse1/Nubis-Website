@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import AppStore from "../assets/Images/App Store.png";
-import PlayStore from "../assets/Images/Play Store.png";
+import AppStore from "../assets/Images/AppStore.png";
+import PlayStore from "../assets/Images/PlayStore.png";
 import Move from "../assets/images/MaskGroup.png";
 import "./Hero.css";
 
