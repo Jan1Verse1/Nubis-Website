@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import GoHero from "../Components/GoHero";
-import Services from "../Components/Services";
+import NubisGoServices from "../Components/NubisGoServices";
 import Footer from "../Components/TheFooter";
 
 const NubisGo = () => {
@@ -9,7 +9,7 @@ const NubisGo = () => {
     <>
       <Header />
       <GoHero />
-      <Services />
+      <NubisGoServices />
       <Footer />
     </>
   );
