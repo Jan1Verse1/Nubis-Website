@@ -1,0 +1,130 @@
+.nubisServices {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    /* border: 1px solid red; */
+    width: auto;
+    padding: 72px;
+    align-items: center;
+}
+
+.nubisServicesTexts {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 24px;
+    margin-bottom: 40px;
+    /* border: 2px solid red; */
+}
+
+.nubisServicesTexts P {
+    font-size: 1.3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    /* font-weight: bold; */
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.nubisServicesHead span {
+    color: #601B96;
+}
+
+.nubisServicesHead {
+    font-size: 3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 4px;
+
+}
+
+.Steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 64vw;
+    height: max-content;
+    /* border: 1px solid red; */
+    gap: 40px;
+}
+
+
+.eachStep {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 240px;
+    height: 300px;
+    border-radius: 24px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.eachSteptext {
+    font-size: 3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #601B96;
+    margin-bottom: 4px;
+}
+
+.stepCard {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #F1E6F9;
+    z-index: 2;
+    top: 25%;
+    border-radius: 24px;
+    padding: 24px;
+    align-items: center;
+    height: 180px;
+}
+
+.stepImage {
+    display: grid;
+    place-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    padding: 12px;
+}
+
+/* .featureIcon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.featureText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.featureText h4 {
+    font-size: 1.8em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 12px;
+} */
+
+.stepCard p {
+    font-size: 1em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    /* font-weight: 600; */
+}

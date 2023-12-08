@@ -18,6 +18,7 @@ const Headerww = () => {
   const contactOverlayRef = useRef(null);
 
   const handleFaqClick = () => {
+    console.log("FAQ Clicked");
     setIsFaqModalOpen(true);
   };
 
@@ -26,6 +27,7 @@ const Headerww = () => {
   };
 
   const handleContactClick = () => {
+    console.log("Contact Us Clicked");
     setIsContactModalOpen(true);
   };
 

@@ -53,7 +53,7 @@ const GoHero = () => {
         <h3 className="HeadTexts headtext">
           Nubis Go? Your personalized delivery service.
         </h3>
-        <p className="headptext headp">
+        <p className="goheadptext headp">
           Nubis is your go-to destination for swift, secure deliveries and a
           modern shopping experience. Your world, your choices — we bring it all
           to you, effortlessly.

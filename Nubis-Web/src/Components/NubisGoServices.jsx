@@ -11,13 +11,22 @@ const Services = () => {
         <p>These are the services we render for you at Nubis.</p>
       </div>
       <div className="servicesImages">
-        <div className="servicesImagesLeft">Nubis Move</div>
+        <div className="servicesImagesLeft">
+          {" "}
+          <h3 className="imagesTag">Nubis Move</h3>{" "}
+        </div>
         <div className="servicesImagesRight">
           <div className="servicesImagesTop">
-            <div className="servicesImagesTop1">Nubis Food</div>
-            <div className="servicesImagesTop2">Nubis Stores</div>
+            <div className="servicesImagesTop1">
+              <h3 className="imagesTag">Nubis Food</h3>{" "}
+            </div>
+            <div className="servicesImagesTop2">
+              <h3 className="imagesTag">Nubis Stores</h3>{" "}
+            </div>
           </div>
-          <div className="servicesImagesBottom">Nubis Travel</div>
+          <div className="servicesImagesBottom">
+            <h3 className="imagesTag">Nubis Travel</h3>{" "}
+          </div>
         </div>
       </div>
     </div>
