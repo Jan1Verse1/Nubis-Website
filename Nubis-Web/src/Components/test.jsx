@@ -1,33 +1,110 @@
-import { useState } from "react";
-// import logo from "../assets/image 1.svg";
-// import { MdSegment } from "react-icons/md";
+import React, { useState, useRef, useEffect } from "react";
+import FaqModal from "../Components/Layout/Modal";
+import ContactModal from "../Components/Layout/ContactModal";
+import { Link, useNavigate } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
+// import "./Header.css";
+import Logo from "../assets/images/logo.png";
+
 const Headerww = () => {
   const [nav, setNav] = useState(false);
   const toggleNav = () => {
     setNav(!nav);
   };
+
+  const [isFaqModalOpen, setIsFaqModalOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const faqOverlayRef = useRef(null);
+  const contactOverlayRef = useRef(null);
+
+  const handleFaqClick = () => {
+    setIsFaqModalOpen(true);
+  };
+
+  const handleCloseFaqModal = () => {
+    setIsFaqModalOpen(false);
+  };
+
+  const handleContactClick = () => {
+    setIsContactModalOpen(true);
+  };
+
+  const handleCloseContactModal = () => {
+    setIsContactModalOpen(false);
+  };
+
+  const navigate = useNavigate();
+
+  const navigateHandler = () => {
+    navigate("/");
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        (faqOverlayRef.current &&
+          !faqOverlayRef.current.contains(event.target)) ||
+        (contactOverlayRef.current &&
+          !contactOverlayRef.current.contains(event.target))
+      ) {
+        // Click outside the modal, close it
+        handleCloseFaqModal();
+        handleCloseContactModal();
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
   return (
     <div>
-      <div className="flex flex-row justify-between align-middle px-4">
+      <div className="flex flex-row justify-between align-middle px-4 bg-black h-24">
         <div className="header__logo">
-          {/* <img src={logo} alt="logo" /> */}
+          <img src={Logo} alt="logo" />
         </div>
         <div className="header__nav">
-          <ul className="md:flex flex-row justify-around hidden ">
-            <li className="p-4">About us </li>
-            <li className="p-4">Services</li>
-            <li className="p-4">FAQ</li>
-            <li className="p-4">Contact Us</li>
+          <ul className="md:flex flex-row justify-around hidden text-white">
+            <li className="p-4">
+              {" "}
+              <Link to="/about">About Us</Link>
+            </li>
+            <li className="p-4">
+              <Link to="/services">Our Services</Link>
+            </li>
+            <li className="p-4" onClick={handleFaqClick}>
+              <Link>FAQs</Link>
+            </li>
+            <li className="p-4" onClick={handleContactClick}>
+              <Link>Contact Us</Link>
+            </li>
           </ul>
         </div>
-        <button className="my-4 hidden md:block">Learn more </button>
+        <button className="my-4 hidden md:block">Get the app </button>
         <div>
-          {/* <MdSegment
+          <IoMenu
             size={40}
             className="flex my-4 md:hidden"
             onClick={toggleNav}
-          /> */}
+          />
         </div>
+
+        {isFaqModalOpen && (
+          <div ref={faqOverlayRef}>
+            <FaqModal open={isFaqModalOpen} onClose={handleCloseFaqModal} />
+          </div>
+        )}
+        {isContactModalOpen && (
+          <div ref={contactOverlayRef}>
+            <ContactModal
+              open={isContactModalOpen}
+              onClose={handleCloseContactModal}
+            />
+          </div>
+        )}
       </div>
       <div>
         <ul
@@ -37,10 +114,19 @@ const Headerww = () => {
               : "hidden"
           }
         >
-          <li>About us </li>
-          <li>Services</li>
-          <li>FAQ</li>
-          <li>Contact Us</li>
+          <li className="p-4">
+            {" "}
+            <Link to="/about">About Us</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/services">Our Services</Link>
+          </li>
+          <li className="p-4" onClick={handleFaqClick}>
+            <Link>FAQs</Link>
+          </li>
+          <li className="p-4" onClick={handleContactClick}>
+            <Link>Contact Us</Link>
+          </li>
         </ul>
       </div>
     </div>

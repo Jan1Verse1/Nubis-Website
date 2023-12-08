@@ -3,15 +3,15 @@ header {
   flex-direction: row;
   padding: 0 3%;
   background-color: #231F20;
-  /* width: 100vw; */
+
   height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  /* position: fixed; */
+
   top: 0;
-  /* border: 2px solid red; */
+
   z-index: 999;
 }
 
