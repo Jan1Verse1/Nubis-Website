@@ -1,4 +1,4 @@
-.join {
+.joinn {
     display: flex;
     width: auto;
     padding: 72px;
@@ -7,20 +7,33 @@
     /* border: 1px solid red; */
 }
 
-.BlueJoin {
+.corpJoin {
     display: flex;
     flex-direction: column;
     height: max-content;
     /* border: 1px solid red; */
-    width: auto;
+    width: 64vw;
     padding: 72px;
     align-items: center;
-    background-color: #601B96;
+    /* background-color: #601B96; */
     border-radius: 20px;
-    width: 64vw;
+
+
+    /* display: flex;
+    flex-direction: column;
+    width: 80VW !important;
+    height: auto !important;
+    background-color: #162A87;
+    border: 2px solid red;
+    align-items: center;
+    border-radius: 20px;
+    margin: 40px;
+    margin-bottom: 120px;
+    padding: 120px; */
+
 }
 
-.BlueJointexts {
+.corpJointexts {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
@@ -28,29 +41,29 @@
     align-items: center;
 }
 
-.BlueJoinHeadTexts {
+.corpJoinHeadTexts {
     font-size: 3em;
     line-height: 56px;
     letter-spacing: -.03em;
     font-weight: bold;
     font-family: 'Ubuntu Mono', monospace;
-    color: #fff;
+    color: #333;
 }
 
-.BlueJoinHeadTexts span {
+.corpJoinHeadTexts span {
 
     line-height: 56px;
     letter-spacing: -.03em;
     font-weight: bold;
     font-family: 'Ubuntu Mono', monospace;
-    color: #F2B00D;
+    color: #162A87;
 }
 
-.joinptext {
+.corpJoinptext {
     font-size: 1.3em;
     font-weight: 400;
     font-family: 'DM Sans', sans-serif;
-    color: #fff;
+    color: #333;
     margin-top: 1em;
 }
 

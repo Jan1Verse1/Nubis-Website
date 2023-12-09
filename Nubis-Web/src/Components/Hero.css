@@ -94,6 +94,18 @@
     border-radius: 56px;
 }
 
+.corp {
+    width: 560px;
+    height: 520px;
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    background-image: url(/src/assets/images/Corporate.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 56px;
+}
+
 .thebtton {
     display: flex;
     flex-direction: row;

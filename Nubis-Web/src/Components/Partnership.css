@@ -1,0 +1,124 @@
+.nubisServices {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    /* border: 1px solid red; */
+    width: auto;
+    padding: 72px;
+    align-items: center;
+}
+
+.nubisServicesTexts {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 24px;
+    margin-bottom: 40px;
+    /* border: 2px solid red; */
+}
+
+.nubisServicesTexts P {
+    font-size: 1.3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    /* font-weight: bold; */
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.nubisServicesHead span {
+    color: #601B96;
+}
+
+.nubisServicesHead {
+    font-size: 3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 4px;
+
+}
+
+.partnertalks {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 64vw;
+    /* border: 1px solid red; */
+    padding: 24px;
+    gap: 40px;
+}
+
+.partnercards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    /* border: 1px solid red; */
+    gap: 40px;
+}
+
+.partneroffercard {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #F1E6F9;
+    border-radius: 12px;
+}
+
+.partneroffercard h4 {
+    font-size: 1.3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 12px;
+
+}
+
+.partneroffercard p {
+    font-size: 1em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.ourNumbers {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 240px;
+    background: linear-gradient(to right, #601B96, #1C1F35);
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    border-radius: 24px;
+}
+
+.numbersTexts {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbersTexts h5 {
+    font-size: 1em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.numbersTexts h1 {
+    font-size: 4em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}

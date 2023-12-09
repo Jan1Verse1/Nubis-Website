@@ -5,6 +5,7 @@
     background-color: #231F20;
     /* border: 2px solid red; */
     padding: 24px;
+    height: 240px;
 }
 
 .Nlogo {
@@ -29,7 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .navlinks {
@@ -75,7 +76,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-top: 1px solid #fff;
-    padding-top: 40px;
+    padding-top: 12px;
 }
 
 .terms {

@@ -1,17 +1,17 @@
 import React from "react";
 import Header from "../Components/Header";
-import Hero from "../Components/Hero";
-import Services from "../Components/Services";
+import CorpHero from "../Components/CorpHero";
+import Partnership from "../Components/Partnership";
+import JoinCorp from "../Components/JoinCorp";
 import Footer from "../Components/TheFooter";
 
 const NubisCorp = () => {
   return (
     <>
       <Header />
-
-      <h4>his is the Nubis Corporate Component</h4>
-      <Hero />
-      <Services />
+      <CorpHero />
+      <Partnership />
+      <JoinCorp />
       <Footer />
     </>
   );
