@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import AppStore from "../assets/Images/AppStore.png";
-import PlayStore from "../assets/Images/PlayStore.png";
 import "./JoinCorp.css";
 
 const Join = () => {

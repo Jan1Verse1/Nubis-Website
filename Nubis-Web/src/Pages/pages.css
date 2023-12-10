@@ -100,7 +100,7 @@
     }
 
     .pagesImagesTag {
-        font-size: 3em;
+        font-size: 1.5em;
         /* Adjust font size for smaller screens */
     }
 
@@ -113,6 +113,36 @@
     .thePagTexts p,
     .thePagTexts li {
         font-size: 1.1em;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 375px) {
+    .page {
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .pagesImages {
+        width: 100vw;
+        height: 24vh;
+    }
+
+    .pagesImagesTag {
+        font-size: 1em;
+        /* Adjust font size for smaller screens */
+    }
+
+    .thePagTexts {
+        width: 90vw;
+        /* Adjust width for smaller screens */
+    }
+
+    .thePagTexts h4,
+    .thePagTexts p,
+    .thePagTexts li {
+        font-size: 0.6em;
         /* Adjust font size for smaller screens */
     }
 }
