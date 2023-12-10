@@ -192,7 +192,7 @@ const ContactModal = ({ open, onClose }) => {
               {messageLength}/{maxLength}
             </div> */}
             </div>
-            <button type="submit" className="submitBtn">
+            <button type="submit" className="submitBttn">
               Submit
             </button>
           </div>
@@ -212,7 +212,6 @@ const ContactModal = ({ open, onClose }) => {
             <FontAwesomeIcon icon={faThreads} className="sIcons" />
           </div>
         </div>
-        ;
       </div>
     </div>
   );

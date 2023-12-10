@@ -1,0 +1,118 @@
+.page {
+    display: flex;
+    align-items: center;
+    width: auto;
+    /* gap: 240px; */
+    padding: 72px;
+    /* margin-bottom: 120px; */
+    justify-content: center;
+}
+
+.pagesImages {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 24vw;
+    overflow: hidden;
+    background-image: url(/src/assets/images/PagesImg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.pagesImagesTag {
+    display: flex;
+    font-size: 5em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    align-self: center;
+}
+
+.thePageTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    /* gap: 240px; */
+    padding: 72px;
+    margin-bottom: 120px;
+    justify-content: center;
+}
+
+.thePagTexts {
+    display: flex;
+    flex-direction: column;
+    width: 72vw;
+    margin-bottom: 24px;
+}
+
+.thePagTexts h4 {
+    display: flex;
+    font-size: 1.5em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+
+}
+
+.thePagTexts p {
+    display: flex;
+    font-size: 1.3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    /* font-weight: bold; */
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+
+}
+
+.thePagTexts li {
+    display: flex;
+    font-size: 1.3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    /* font-weight: bold; */
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 40px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .pagesImages {
+        width: 100vw;
+        height: 24vh;
+    }
+
+    .pagesImagesTag {
+        font-size: 3em;
+        /* Adjust font size for smaller screens */
+    }
+
+    .thePagTexts {
+        width: 90vw;
+        /* Adjust width for smaller screens */
+    }
+
+    .thePagTexts h4,
+    .thePagTexts p,
+    .thePagTexts li {
+        font-size: 1.1em;
+        /* Adjust font size for smaller screens */
+    }
+}

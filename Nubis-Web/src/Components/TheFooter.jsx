@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
 import "./TheFooter.css";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThreads,
@@ -20,8 +21,14 @@ const Footer = () => {
         <div className="links">
           <div className="men">
             <ul className="navlinks">
-              <li>Terms of use</li>
-              <li>Privacy policy</li>
+              <li>
+                {" "}
+                <Link to="/Terms">Terms of use</Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/PrivacyPolicy">Privacy policy</Link>
+              </li>
             </ul>
           </div>
           <div className="contactt">

@@ -259,20 +259,22 @@ a {
 }
 
 /* CSS for the submit button */
-.submitBtn {
+.submitBttn {
   grid-column: span 2;
   /* Span two columns */
   padding: 10px;
-  background-color: #601B96;
-  color: #fff;
+  /* background-color: #601B96; */
+  color: #601B96;
   height: 48px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  /* border: 1px solid red; */
 }
 
-.submitBtn:hover {
+.submitBttn:hover {
   background-color: #a248e6;
+  color: #fff;
 }
 
 
