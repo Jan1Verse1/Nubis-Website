@@ -96,3 +96,49 @@
     font-weight: 400;
     font-family: 'DM Sans', sans-serif;
 }
+
+/* Media query for screens smaller than 768px */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+
+    .footer {
+        /* display: flex;
+        flex-direction: row; */
+        width: auto;
+        background-color: #231F20;
+        /* border: 2px solid red; */
+        padding: 12px;
+        height: max-content;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 4px;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 12px;
+    }
+
+    .small {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        border-top: 1px solid #fff;
+        padding-top: 12px;
+        justify-content: center;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+        color: #fff;
+        align-self: center;
+    }
+}

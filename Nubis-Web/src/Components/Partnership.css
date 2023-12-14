@@ -45,7 +45,7 @@
 
 .partnertalks {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     width: 64vw;
     /* border: 1px solid red; */
     padding: 24px;
@@ -121,4 +121,23 @@
     font-family: 'DM Sans', sans-serif;
     color: #fff;
     margin-bottom: 12px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .partnertalks {
+        display: grid;
+        /* grid-template-rows: 1fr 1fr; */
+        width: 88vw;
+        /* border: 1px solid red; */
+        padding: 24px;
+        gap: 40px;
+    }
+
+    .partnercards {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+        /* border: 1px solid red; */
+        gap: 40px;
+    }
 }

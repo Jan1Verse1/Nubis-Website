@@ -102,3 +102,60 @@
     font-family: 'DM Sans', sans-serif;
     color: #333;
 }
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .nubisServices {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        /* border: 1px solid red; */
+        width: auto;
+        padding: 32px;
+        align-items: center;
+    }
+
+    .nubisServicesTexts {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        padding: 24px;
+        margin-bottom: 40px;
+        /* border: 2px solid red; */
+    }
+
+    .nubisServicesTexts P {
+        font-size: 1.3em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        /* font-weight: bold; */
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        margin-bottom: 4px;
+    }
+
+    .nubisServicesHead span {
+        color: #601B96;
+    }
+
+    .nubisServicesHead {
+        font-size: 3em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        font-weight: bold;
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        margin-bottom: 4px;
+
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: max-content;
+        /* border: 1px solid red; */
+        gap: 40px;
+    }
+
+}

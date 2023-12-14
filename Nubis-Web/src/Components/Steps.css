@@ -128,3 +128,25 @@
     color: #333;
     /* font-weight: 600; */
 }
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+
+    .nubisServices {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        /* border: 1px solid red; */
+        width: auto;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .Steps {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 64vw;
+        height: max-content;
+        /* border: 1px solid red; */
+        gap: 40px;
+    }
+}

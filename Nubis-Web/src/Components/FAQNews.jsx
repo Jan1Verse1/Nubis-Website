@@ -35,15 +35,16 @@ const FAQNews = () => {
           <div className="calltext">
             <FontAwesomeIcon icon={faPhone} className="call" />
             <p className="newstextP">
-              Have Any Questions <br /> (00) 112 365 489
+              Have Any Questions <br />
+              +234 906 416 3807
             </p>
           </div>
           <div className="socialmedia">
-            <FontAwesomeIcon icon={faFacebookF} className="socialmediaicon" />
+            {/* <FontAwesomeIcon icon={faFacebookF} className="socialmediaicon" /> */}
             <FontAwesomeIcon icon={faInstagram} className="socialmediaicon" />
-            <FontAwesomeIcon icon={faXTwitter} className="socialmediaicon" />
+            {/* <FontAwesomeIcon icon={faXTwitter} className="socialmediaicon" />
             <FontAwesomeIcon icon={faLinkedinIn} className="socialmediaicon" />
-            <FontAwesomeIcon icon={faThreads} className="socialmediaicon" />
+            <FontAwesomeIcon icon={faThreads} className="socialmediaicon" /> */}
           </div>
         </div>
       </div>

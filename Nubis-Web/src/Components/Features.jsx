@@ -35,11 +35,10 @@ const Features = () => {
             <FontAwesomeIcon icon={faCreditCard} className="featureIcon" />
           </div>
           <div className="featureText">
-            <h4>Fast Delivery</h4>
+            <h4>Ease of Payment</h4>
             <p>
-              No more delayed or slow deliveries as we offer fast and reliable
-              delivery trips from the originating location to your preferred
-              locations.
+              Enjoy ease of payment for all our services through the many
+              payment methods and avenues we have provided for you.
             </p>
           </div>
         </div>
@@ -48,11 +47,11 @@ const Features = () => {
             <FontAwesomeIcon icon={faMotorcycle} className="featureIcon" />
           </div>
           <div className="featureText">
-            <h4>Fast Delivery</h4>
+            <h4>Trusted Riders</h4>
             <p>
-              No more delayed or slow deliveries as we offer fast and reliable
-              delivery trips from the originating location to your preferred
-              locations.
+              You can rest knowing your packages are secured and safe with our
+              riders. You can also track the progress of your packages in real
+              time via our app.
             </p>
           </div>
         </div>

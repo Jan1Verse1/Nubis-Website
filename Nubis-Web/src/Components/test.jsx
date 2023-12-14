@@ -89,7 +89,7 @@ const Headerww = () => {
         <div>
           <IoMenu
             size={40}
-            className="flex my-4 md:hidden"
+            className="flex my-4 md:hidden align-baseline"
             onClick={toggleNav}
           />
         </div>

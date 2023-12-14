@@ -32,31 +32,25 @@ const Footer = () => {
             </ul>
           </div>
           <div className="contactt">
-            <p>info@nubis.com</p>
-            <p>+234 806 731 8885</p>
+            <p>nubis.ng@outlook.com</p>
+            <p>+234 906 416 3807</p>
           </div>
           <div className="contactt">
             <p>Follow us on Social Media</p>
+
             <div className="socialmedia">
-              <FontAwesomeIcon icon={faFacebookF} className="socialmediaicon" />
-              <FontAwesomeIcon icon={faInstagram} className="socialmediaicon" />
-              <FontAwesomeIcon icon={faXTwitter} className="socialmediaicon" />
-              <FontAwesomeIcon
-                icon={faLinkedinIn}
-                className="socialmediaicon"
-              />
-              <FontAwesomeIcon icon={faThreads} className="socialmediaicon" />
+              <Link to="/https://www.instagram.com/nubis_logistics/?igshid=YTQwZjQ0NmI0OA%3D%3D">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="socialmediaicon"
+                />
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div className="small">
         <p className="smallA">© 2023 Nubis Limited - All Rights Reserved</p>
-
-        {/* <div className="terms">
-          <p className="smallA">Terms of use </p>
-          <p className="smallA">Privacy policy </p>
-        </div> */}
       </div>
     </div>
   );

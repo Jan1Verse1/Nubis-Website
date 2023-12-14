@@ -103,11 +103,12 @@
     color: #333;
     width: 60vw;
     font-family: 'DM Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 400;
     line-height: 1.6;
     /* border: 1px solid red; */
     /* border-radius: 10px; */
+    margin-bottom: 12px;
 }
 
 .faqicon {
@@ -165,4 +166,60 @@
     font-size: 1.3em;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
+}
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .News {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid red; */
+    }
+
+    /* .accordion {
+        width: 88vw;
+    } */
+
+    .accordionitem {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        color: #333;
+        width: auto;
+        padding-top: 12px;
+        margin-bottom: 12px;
+        /* border-top: 1px solid #333 */
+    }
+
+    .accordiontitle {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        /* border: 2px solid red; */
+        color: #333;
+        font-size: 1.3em;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    .accordioncontent {
+        display: flex;
+        flex-direction: row;
+        color: #333;
+        width: auto;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1.3em;
+        font-weight: 400;
+        line-height: 1.6;
+        /* border: 1px solid red; */
+        /* border-radius: 10px; */
+        margin-bottom: 12px;
+    }
+
 }

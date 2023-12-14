@@ -8,10 +8,12 @@ const NubisRider = () => {
   return (
     <>
       <Header />
+      <div className="rider">
+        {" "}
+        <h4>Watch This Space!</h4>
+        <p>We are bring this soon.</p>
+      </div>
 
-      <h4>his is the Nubis Rider Component</h4>
-      <Hero />
-      <Services />
       <Footer />
     </>
   );

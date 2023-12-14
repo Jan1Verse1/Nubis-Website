@@ -62,38 +62,41 @@ const Header = () => {
 
   return (
     <div>
-      <header className="flex flex-row justify-between align-middle px-4 w-full">
-        <div>
-          <img
-            className="logo"
-            src={Logo}
-            alt="Nubis logo"
-            onClick={navigateHandler}
-          />
-        </div>
-        <div className="header__nav">
-          <ul className="md:flex flex-row justify-around hidden ">
-            <li className="p-4">
-              <Link to="/about">About Us</Link>
-            </li>
-            <li className="p-4">
-              <Link to="/services">Our Services</Link>
-            </li>
-            <li className="p-4" onClick={handleFaqClick}>
-              <Link>FAQs</Link>
-            </li>
-            <li className="p-4" onClick={handleContactClick}>
-              <Link>Contact Us</Link>
-            </li>
-          </ul>
-
-          <button className="my-4 hidden md:block thebtn">Get The App</button>
+      <header className="flex flex-row justify-between align-middle px-4 bg-black h-24 w-full ">
+        <div className="flex flex-row justify-between w-full">
           <div>
-            <IoMenu
-              size={40}
-              className="flex my-4 md:hidden"
-              onClick={toggleNav}
+            <img
+              className="logo"
+              src={Logo}
+              alt="Nubis logo"
+              onClick={navigateHandler}
             />
+          </div>
+          <div className="md:flex flex-row justify-around">
+            <ul className="md:flex flex-row justify-around align-middle text-white hidden ">
+              <li className="p-4">
+                <Link to="/about">About Us</Link>
+              </li>
+              <li className="p-4">
+                <Link to="/services">Our Services</Link>
+              </li>
+              <li className="p-4" onClick={handleFaqClick}>
+                <Link>FAQs</Link>
+              </li>
+              <li className="p-4" onClick={handleContactClick}>
+                <Link>Contact Us</Link>
+              </li>
+            </ul>
+
+            <button className="my-4 hidden md:block thebtn">Get The App</button>
+            <div>
+              <IoMenu
+                size={40}
+                color="#fff"
+                className="flex my-4 md:hidden"
+                onClick={toggleNav}
+              />
+            </div>
           </div>
         </div>
 
@@ -115,7 +118,7 @@ const Header = () => {
         <ul
           className={
             nav
-              ? "flex flex-col md:hidden absolute top-20 left-20 h-max w-full text-center text-white rounded-md bg-textBlue"
+              ? "flex flex-col md:hidden absolute top-20 left-20 h-max w-full text-center text-white rounded-md bg-black z-20"
               : "hidden"
           }
         >

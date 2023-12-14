@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -205,11 +206,9 @@ const ContactModal = ({ open, onClose }) => {
             </p>
           </div>
           <div className="submedia">
-            <FontAwesomeIcon icon={faFacebookF} className="sIcons" />
-            <FontAwesomeIcon icon={faInstagram} className="sIcons" />
-            <FontAwesomeIcon icon={faXTwitter} className="sIcons" />
-            <FontAwesomeIcon icon={faLinkedinIn} className="sIcons" />
-            <FontAwesomeIcon icon={faThreads} className="sIcons" />
+            <Link to="/https://www.instagram.com/nubis_logistics/?igshid=YTQwZjQ0NmI0OA%3D%3D">
+              <FontAwesomeIcon icon={faInstagram} className="socialmediaicon" />
+            </Link>
           </div>
         </div>
       </div>

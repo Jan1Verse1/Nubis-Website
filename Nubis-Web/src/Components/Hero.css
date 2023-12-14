@@ -122,3 +122,57 @@
     margin-top: 2em;
 
 }
+
+/* Media query for screens smaller than 768px */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+
+    .heroscreen {
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px;
+        margin-bottom: 12px;
+        align-items: center;
+    }
+
+    .herotexts {
+        max-width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .HeadTexts {
+        font-size: 2.4em;
+        line-height: 48px;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+    .headptext,
+    .goheadptext {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .downbtnn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .appbuttons {
+        flex-direction: row;
+        margin-top: 16px;
+    }
+
+    .phone,
+    .move,
+    .corp {
+        height: 300px;
+        border-radius: 8px;
+        width: 300px;
+        margin: 24px;
+    }
+}

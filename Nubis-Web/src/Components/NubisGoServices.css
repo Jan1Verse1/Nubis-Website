@@ -138,3 +138,98 @@
     color: #fff;
     align-self: center;
 }
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .nubisServices {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        /* border: 1px solid red; */
+        width: auto;
+        padding: 12px;
+        align-items: center;
+    }
+
+    .nubisServicesTexts P {
+        font-size: 1.8em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        /* font-weight: bold; */
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+    .nubisServicesHead span {
+        color: #601B96;
+    }
+
+    .nubisServicesHead {
+        font-size: 2.4em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        font-weight: bold;
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        margin-bottom: 4px;
+        text-align: center;
+        width: 80vw;
+    }
+
+    .servicesImages {
+        display: grid;
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        width: 88vw;
+        height: max-content;
+        grid-auto-columns: 1fr;
+        gap: 40px;
+    }
+
+    .servicesImagesRight {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 40px;
+        align-items: center;
+        height: max-content;
+        /* border: 1px solid red; */
+    }
+
+    .servicesImagesTop {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        height: max-content;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .servicesImagesLeft,
+    .servicesImagesTop1,
+    .servicesImagesTop2,
+    .servicesImagesBottom {
+        display: flex;
+        justify-content: center;
+        width: 88vw;
+        height: 240px;
+        /* border: 1px solid #ccc; */
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 24px;
+        align-items: center;
+    }
+
+    .imagesTag {
+        display: flex;
+        font-size: 2em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        /* font-weight: bold; */
+        font-family: 'DM Sans', sans-serif;
+        color: #fff;
+        align-self: center;
+    }
+}

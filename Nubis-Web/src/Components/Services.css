@@ -24,6 +24,7 @@
     grid-gap: 120px;
 }
 
+
 .serviceCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,3 +122,41 @@
     display: flex;
     margin: 0px;
 } */
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .OurServices {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        /* border: 1px solid red; */
+        width: auto;
+        padding: 48px;
+        align-items: center;
+    }
+
+    .texts {
+        font-size: 2.4em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        font-weight: 600;
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        margin-bottom: 32px;
+    }
+
+    .serviceCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+        width: 80vw;
+        align-items: center;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+}

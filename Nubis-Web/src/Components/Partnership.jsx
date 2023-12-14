@@ -37,7 +37,7 @@ const Partnership = () => {
           </div>
         </div>
 
-        <div className="ourNumbers">
+        {/* <div className="ourNumbers">
           <div className="numbersTexts">
             <h5>Number of Partners</h5>
             <h1>27+</h1>
@@ -46,7 +46,7 @@ const Partnership = () => {
             <h5>Value of Investments</h5>
             <h1>$7M+</h1>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

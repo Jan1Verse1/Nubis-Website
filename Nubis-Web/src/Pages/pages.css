@@ -85,40 +85,37 @@
 
 }
 
-
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .page {
-        padding: 40px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .pagesImages {
-        width: 100vw;
-        height: 24vh;
-    }
-
-    .pagesImagesTag {
-        font-size: 1.5em;
-        /* Adjust font size for smaller screens */
-    }
-
-    .thePagTexts {
-        width: 90vw;
-        /* Adjust width for smaller screens */
-    }
-
-    .thePagTexts h4,
-    .thePagTexts p,
-    .thePagTexts li {
-        font-size: 1.1em;
-        /* Adjust font size for smaller screens */
-    }
+.rider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vw;
+    height: 40vh;
 }
 
+.rider h4 {
+    font-size: 5em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    align-self: center;
+}
+
+.rider p {
+    font-size: 3em;
+    line-height: auto;
+    letter-spacing: -.03em;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    align-self: center;
+}
+
+
 /* Media query for smaller screens */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
     .page {
         padding: 20px;
         /* Adjust padding for smaller screens */
@@ -134,15 +131,55 @@
         /* Adjust font size for smaller screens */
     }
 
-    .thePagTexts {
-        width: 90vw;
-        /* Adjust width for smaller screens */
+    .thePageTexts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        /* gap: 240px; */
+        padding: 32px;
+        margin-bottom: 120px;
+        justify-content: center;
+        margin-top: -8vw;
     }
 
     .thePagTexts h4,
     .thePagTexts p,
     .thePagTexts li {
-        font-size: 0.6em;
+        font-size: 1em;
         /* Adjust font size for smaller screens */
     }
+
+    .rider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12vw;
+        height: 40vh;
+        justify-self: center;
+        /* margin-top: 24vw; */
+    }
+
+    .rider h4 {
+        font-size: 3em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        font-weight: bold;
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        align-self: center;
+        text-align: center;
+    }
+
+    .rider p {
+        font-size: 1.8em;
+        line-height: auto;
+        letter-spacing: -.03em;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+        color: #333;
+        align-self: center;
+    }
+
+
 }

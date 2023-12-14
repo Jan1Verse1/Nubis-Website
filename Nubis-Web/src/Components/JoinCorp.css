@@ -80,3 +80,72 @@
     height: 3rem;
     margin-right: 2vw;
 }
+
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .joinn {
+        display: flex;
+        width: 100vw;
+        padding: 24px;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+
+    .corpJoin {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        /* border: 1px solid red; */
+        width: 64vw;
+        padding: 24px;
+        align-items: center;
+        /* background-color: #601B96; */
+        border-radius: 20px;
+        width: 88vw;
+    }
+
+    .BlueJointexts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .corpJoinHeadTexts {
+        font-size: 2.4em;
+        line-height: 56px;
+        letter-spacing: -.03em;
+        font-weight: bold;
+        font-family: 'Ubuntu Mono', monospace;
+        text-align: center;
+    }
+
+
+
+    .corpJoinptext {
+        font-size: 1.3em;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+
+    .appbuttonss {
+        display: flex;
+        /* flex-direction: column; */
+        margin-top: 1em;
+        width: auto;
+        height: max-content;
+        /* border: 1px solid red; */
+    }
+
+
+    .downbtnn {
+        width: 8rem;
+        height: 2.4rem;
+        margin-bottom: 2vw;
+    }
+
+
+}
