@@ -12,6 +12,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const socialMediaLink =
+    "https://instagram.com/nubis_logistics?igshid=YTQwZjQ0NmI0OA==";
+
   return (
     <div className="footer">
       <div className="main">
@@ -39,7 +42,7 @@ const Footer = () => {
             <p>Follow us on Social Media</p>
 
             <div className="socialmedia">
-              <Link to="/https://www.instagram.com/nubis_logistics/?igshid=YTQwZjQ0NmI0OA%3D%3D">
+              <Link to={socialMediaLink}>
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="socialmediaicon"

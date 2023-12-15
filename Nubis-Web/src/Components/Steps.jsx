@@ -39,7 +39,7 @@ const NubisSteps = () => {
             <div className="stepImage">
               <img src={bike} alt="order bike" />
             </div>
-            <p>May your first order</p>
+            <p>Make your first order</p>
           </div>
         </div>
         <div className="eachStep">

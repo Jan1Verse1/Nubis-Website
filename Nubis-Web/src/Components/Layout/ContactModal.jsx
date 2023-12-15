@@ -13,6 +13,9 @@ import {
 import "./ContactModal.css";
 
 const ContactModal = ({ open, onClose }) => {
+  const socialMediaLink =
+    "https://instagram.com/nubis_logistics?igshid=YTQwZjQ0NmI0OA==";
+
   const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
@@ -202,11 +205,11 @@ const ContactModal = ({ open, onClose }) => {
           <div className="calltext">
             <FontAwesomeIcon icon={faPhone} className="call" />
             <p className="SubText">
-              Have Any Questions <br /> (00) 112 365 489
+              Have Any Questions <br /> +234 906 416 3807
             </p>
           </div>
           <div className="submedia">
-            <Link to="/https://www.instagram.com/nubis_logistics/?igshid=YTQwZjQ0NmI0OA%3D%3D">
+            <Link to={socialMediaLink}>
               <FontAwesomeIcon icon={faInstagram} className="socialmediaicon" />
             </Link>
           </div>

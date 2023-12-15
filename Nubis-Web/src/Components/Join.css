@@ -23,7 +23,7 @@
 .BlueJointexts {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     /* margin-top: 40px; */
     align-items: center;
 }
@@ -95,6 +95,8 @@
     .BlueJointexts {
         display: flex;
         flex-direction: column;
+        /* margin-left: 40px; */
+        /* margin-top: 40px; */
         align-items: center;
     }
 

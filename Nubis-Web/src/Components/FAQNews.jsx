@@ -1,5 +1,6 @@
 import React from "react";
 import HomeAccordion from "./HomeAccordion";
+import { Link, useNavigate } from "react-router-dom";
 import { HomeAccordionData } from "../Components/Layout/HomeAccordionContent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +14,9 @@ import {
 import "./FAQNews.css";
 
 const FAQNews = () => {
+  const socialMediaLink =
+    "https://instagram.com/nubis_logistics?igshid=YTQwZjQ0NmI0OA==";
+
   return (
     <div className="News">
       <div className="FAQs">
@@ -41,7 +45,9 @@ const FAQNews = () => {
           </div>
           <div className="socialmedia">
             {/* <FontAwesomeIcon icon={faFacebookF} className="socialmediaicon" /> */}
-            <FontAwesomeIcon icon={faInstagram} className="socialmediaicon" />
+            <Link to={socialMediaLink}>
+              <FontAwesomeIcon icon={faInstagram} className="socialmediaicon" />
+            </Link>
             {/* <FontAwesomeIcon icon={faXTwitter} className="socialmediaicon" />
             <FontAwesomeIcon icon={faLinkedinIn} className="socialmediaicon" />
             <FontAwesomeIcon icon={faThreads} className="socialmediaicon" /> */}
