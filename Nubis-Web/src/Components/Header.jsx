@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import FaqModal from "../Components/Layout/Modal";
 import ContactModal from "../Components/Layout/ContactModal";
+import ServiceModal from "../Components/Layout/ServiceModal";
 import { Link, useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import "./Header.css";
@@ -14,6 +15,7 @@ const Header = () => {
 
   const [isFaqModalOpen, setIsFaqModalOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isServiceModalOpen, setIsServiceModalOpen] = useState(false);
   const faqOverlayRef = useRef(null);
   const contactOverlayRef = useRef(null);
 
@@ -33,6 +35,14 @@ const Header = () => {
     setIsContactModalOpen(false);
   };
 
+  const handleServiceClick = () => {
+    setIsServiceModalOpen(true);
+  };
+
+  const handleCloseServiceModal = () => {
+    setIsServiceModalOpen(false);
+  };
+
   const navigate = useNavigate();
 
   const navigateHandler = () => {
@@ -45,11 +55,14 @@ const Header = () => {
         (faqOverlayRef.current &&
           !faqOverlayRef.current.contains(event.target)) ||
         (contactOverlayRef.current &&
-          !contactOverlayRef.current.contains(event.target))
+          !contactOverlayRef.current.contains(event.target)) ||
+        (serviceOverlayRef.current &&
+          !serviceOverlayRef.current.contains(event.target))
       ) {
         // Click outside the modal, close it
         handleCloseFaqModal();
         handleCloseContactModal();
+        handleCloseServiceModal();
       }
     };
 
@@ -77,8 +90,8 @@ const Header = () => {
               <li className="p-4">
                 <Link to="/about">About Us</Link>
               </li>
-              <li className="p-4">
-                <Link to="/services">Our Services</Link>
+              <li className="p-4" onClick={handleServiceClick}>
+                <Link>Our Services</Link>
               </li>
               <li className="p-4" onClick={handleFaqClick}>
                 <Link>FAQs</Link>
@@ -88,7 +101,7 @@ const Header = () => {
               </li>
             </ul>
 
-            <button className="my-4 hidden md:block thebtn">Get The App</button>
+            {/* <button className="my-4 hidden md:block thebtn">Get The App</button> */}
             <div>
               <IoMenu
                 size={40}
@@ -113,6 +126,14 @@ const Header = () => {
             />
           </div>
         )}
+        {isServiceModalOpen && (
+          <div ref={contactOverlayRef}>
+            <ServiceModal
+              open={isServiceModalOpen}
+              onClose={handleCloseServiceModal}
+            />
+          </div>
+        )}
       </header>
       <div>
         <ul
@@ -125,8 +146,8 @@ const Header = () => {
           <li className="p-4">
             <Link to="/about">About Us</Link>
           </li>
-          <li className="p-4">
-            <Link to="/services">Our Services</Link>
+          <li className="p-4" onClick={handleServiceClick}>
+            <Link>Our Services</Link>
           </li>
           <li className="p-4" onClick={handleFaqClick}>
             <Link>FAQs</Link>

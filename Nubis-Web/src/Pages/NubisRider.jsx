@@ -11,7 +11,7 @@ const NubisRider = () => {
       <div className="rider">
         {" "}
         <h4>Watch This Space!</h4>
-        <p>We are bring this soon.</p>
+        <p>We are bringing this soon.</p>
       </div>
 
       <Footer />

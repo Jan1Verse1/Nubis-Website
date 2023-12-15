@@ -1,0 +1,33 @@
+.serviceModal {
+  display: block;
+  flex-direction: column;
+  width: 20vw;
+  position: absolute;
+  top: -100vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: #DFC9F0;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modalContainer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  max-width: max-content;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .modalContainer ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    list-style-type: none;
+    max-width: max-content;
+    gap: 24px;
+  }
+}
